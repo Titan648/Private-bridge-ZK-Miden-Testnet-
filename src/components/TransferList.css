@@ -1,0 +1,98 @@
+.transfer-list {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transfer-list h2 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.no-transfers {
+  text-align: center;
+  color: #999;
+  padding: 40px;
+}
+
+.transfers {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.transfer-card {
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  transition: border-color 0.2s;
+}
+
+.transfer-card:hover {
+  border-color: #2196f3;
+}
+
+.transfer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.transfer-id {
+  font-family: monospace;
+  font-size: 14px;
+  color: #666;
+}
+
+.transfer-status {
+  padding: 4px 12px;
+  border-radius: 12px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.transfer-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.detail-row .label {
+  color: #666;
+  font-weight: 500;
+}
+
+.detail-row .value {
+  color: #333;
+  font-family: monospace;
+}
+
+.detail-row .value.hash {
+  color: #2196f3;
+}
+
+.proof-indicator {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.proof-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
