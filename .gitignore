@@ -1,0 +1,5 @@
+ZCASH_TESTNET_RPC=https://testnet.zcash.network
+MIDEN_TESTNET_RPC=https://testnet.miden.network
+RELAYER_PRIVATE_KEY=your_relayer_private_key_here
+BRIDGE_CONTRACT_ADDRESS=your_bridge_contract_address
+PORT=3001
