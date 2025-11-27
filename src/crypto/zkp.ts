@@ -1,4 +1,3 @@
-import { groth16 } from 'snarkjs';
 import { buildPoseidon } from 'circomlibjs';
 
 export class ZKPGenerator {
