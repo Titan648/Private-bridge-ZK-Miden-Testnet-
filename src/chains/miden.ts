@@ -11,7 +11,7 @@ export class MidenClient {
   // Create Miden note for private state transition
   async createNote(
     assets: MidenAsset[],
-    recipient: string,
+    _recipient: string,
     script?: string
   ): Promise<MidenNote> {
     const note: MidenNote = {
