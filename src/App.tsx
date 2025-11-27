@@ -8,7 +8,6 @@ import './App.css';
 function App() {
   const [transfers, setTransfers] = useState<ShieldedTransfer[]>([]);
   const [bridgeState, setBridgeState] = useState<BridgeState | null>(null);
-  const [ws, setWs] = useState<WebSocket | null>(null);
 
   useEffect(() => {
     // Connect to WebSocket
@@ -33,8 +32,6 @@ function App() {
         });
       }
     };
-
-    setWs(websocket);
 
     // Fetch initial data
     fetchBridgeState();
