@@ -36,12 +36,12 @@ wss.on('connection', (ws) => {
 // REST API endpoints
 
 // Health check
-app.get('/health', (req, res) => {
+app.get('/health', (_req, res) => {
   res.json({ status: 'ok', timestamp: Date.now() });
 });
 
 // Get bridge state
-app.get('/api/bridge/state', async (req, res) => {
+app.get('/api/bridge/state', async (_req, res) => {
   try {
     const state = await bridge.getBridgeState();
     res.json(state);
@@ -103,7 +103,7 @@ app.get('/api/transfer/:id', (req, res) => {
 });
 
 // Get all transfers
-app.get('/api/transfers', (req, res) => {
+app.get('/api/transfers', (_req, res) => {
   const transfers = bridge.getAllTransfers();
   res.json(transfers);
 });
